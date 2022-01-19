@@ -5,12 +5,66 @@
     <link>https://www.dongdongdoge.github.io/author/wentao-dong/</link>
       <atom:link href="https://www.dongdongdoge.github.io/author/wentao-dong/index.xml" rel="self" type="application/rss+xml" />
     <description>Wentao DONG</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>MIT License</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>MIT License</copyright><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.dongdongdoge.github.io/media/static/media/profile.jpeg</url>
       <title>Wentao DONG</title>
       <link>https://www.dongdongdoge.github.io/author/wentao-dong/</link>
     </image>
+    
+    <item>
+      <title>Local or LAN-wise Overleaf within WSL2.0</title>
+      <link>https://www.dongdongdoge.github.io/post/overleaf_local/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.dongdongdoge.github.io/post/overleaf_local/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;好久不见，这句话说给我自己听，因为买的域名到期了，一直处在废与没废的叠加态，心血来潮迁移到github.io，激励自己多思考，多写有意义的paper。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows本地IO的速度实在牛马，latex分的文件多了，图多了，奇慢，加上overleaf强大的容错性，没理由不冲，结果CCS前两天的时候，忽然维护，刷新半小时才刷的出来，以防万一，这里记录了WSL2中部署Community版本中踩过的坑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Overleaf community本质上就是之前的sharelatex开源项目，直接用docker打包好了镜像，可以说是基本上能够即插即，内容大致包括了前端的web编辑器，后端的服务器，数据库，以及texlive的一套工具链。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;wsl2中安装docker，和docker-compose组件, python版本导致的不好装可以考虑拉取源码编译，简单又卫生。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考 
+&lt;a href=&#34;http://get.daocloud.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://get.daocloud.io/&lt;/a&gt;
+轻度用户不用将非root用户添加到docker group；重度用户也不用从零开始配docker环境&amp;hellip;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;拉取sharelatex镜像: &lt;code&gt;sudo docker pull sharelatex/sharelatex&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;下载并更改配置文件: 
+&lt;a href=&#34;https://github.com/overleaf/overleaf/blob/old-master/docker-compose.yml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/overleaf/overleaf/blob/old-master/docker-compose.yml&lt;/a&gt;，主要是端口号等。&lt;/li&gt;
+&lt;li&gt;在配置文件文件目录启动docker容器: &lt;code&gt;sudo docker-compose up&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;启动后即可通过 http://127.0.0.1:port 访问前端编辑器。&lt;/li&gt;
+&lt;li&gt;按需注册账户和管理员账户: http://127.0.0.1:port/launchpad&lt;/li&gt;
+&lt;li&gt;不过到目前为止大概率是个玩具程序，复杂的latex文件基本跑不了，因为缺少大量相关的宏。&lt;/li&gt;
+&lt;li&gt;查看并进入sharelatex容器，利用texliveonfly自动测试并安装依赖的包：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;sudo docker ps
+sudo docker exec -it xxxx /bin/bash
+tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+tlmgr update --self
+tlmgr install texliveonfly
+
+find /var -name xxx.tex
+texliveonfly xxx.tex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;![](./featured.png)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;对于ACM和IEEE的模板，大概率会因为字体的原因编译失败，可以添加 \usepackage{lmodern} 宏包来规避，但是彻底解决还需安装需要的字体。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;所以这么麻烦，我为什么不直接在本地编译，我爱Overleaf，但&amp;hellip;local overleaf对我是确实伪需求&amp;hellip;生命在于折腾。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p style=&#34;color:red;text-align:center&#34;&gt;(转载请注明出处)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Add Third-party Comments Provider for Hugo-Academic  (New Version)</title>
