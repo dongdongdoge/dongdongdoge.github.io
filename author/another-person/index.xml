@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>another person | Wentao DONG&#39;s Page</title>
+    <link>https://www.dongdongdoge.github.io/author/another-person/</link>
+      <atom:link href="https://www.dongdongdoge.github.io/author/another-person/index.xml" rel="self" type="application/rss+xml" />
+    <description>another person</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>MIT License</copyright><lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.dongdongdoge.github.io/media/static/media/profile.jpeg</url>
+      <title>another person</title>
+      <link>https://www.dongdongdoge.github.io/author/another-person/</link>
+    </image>
+    
+    <item>
+      <title>Template 4 all</title>
+      <link>https://www.dongdongdoge.github.io/post/getting-started/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.dongdongdoge.github.io/post/getting-started/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Markdown Syntax&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

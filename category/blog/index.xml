@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog | Wentao DONG&#39;s Page</title>
+    <link>https://www.dongdongdoge.github.io/category/blog/</link>
+      <atom:link href="https://www.dongdongdoge.github.io/category/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>blog</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>MIT License</copyright><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.dongdongdoge.github.io/media/static/media/profile.jpeg</url>
+      <title>blog</title>
+      <link>https://www.dongdongdoge.github.io/category/blog/</link>
+    </image>
+    
+    <item>
+      <title>Add Third-party Comments Provider for Hugo-Academic  (New Version)</title>
+      <link>https://www.dongdongdoge.github.io/post/add_comment_panel/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.dongdongdoge.github.io/post/add_comment_panel/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新版hugo academic（wowchemy 5.0+构建）与之前的布局有很大不同，theme/layouts.partial 没了，网络上能找到的方法都不能用（wowchem官方扩展的文档也没更新&amp;hellip;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内置的comments provider就两个 commento与disqus，不是被墙就是广告太多，影响观感&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;轻量级留言板 &amp;ndash; utteranc.es，利用github issue特性构建留言板，效果不错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./featured.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;上js&amp;hellip;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var r = /\/post\/[a-zA-Z]+/.test(window.location.pathname)
+if (r) {
+    (function(){
+        var utterances = document.createElement(&#39;script&#39;);
+        utterances.type = &#39;text/javascript&#39;;
+        utterances.async = true;
+        utterances.setAttribute(&#39;issue-term&#39;,&#39;pathname&#39;)
+        utterances.setAttribute(&#39;theme&#39;,&#39;github-light&#39;)
+        utterances.setAttribute(&#39;repo&#39;,&#39;dongdongdoge/utterances&#39;)
+        utterances.crossorigin = &#39;anonymous&#39;;
+        utterances.src = &#39;https://utteranc.es/client.js&#39;;
+        document.body.appendChild(utterances);
+    })();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p style=&#34;color:red;text-align:center&#34;&gt;(转载请注明出处)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
