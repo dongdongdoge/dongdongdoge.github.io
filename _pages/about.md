@@ -17,22 +17,24 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm Wentao DONG (董文韬, pronounced like "when-top-down"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies Limited (AIFT). I earned my Ph.D. degree in Computer Science from City University of Hong Kong under the supervision of Prof. Cong WANG. 
+I'm Wentao DONG, (董文韬, pronounced like "when-top-down"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies (AIFT), working with 
+Prof. Xiaohua JIA. I earned my Ph.D. degree in Computer Science from City University of Hong Kong under the supervision of Prof. Cong WANG. 
 
-My research advances secure computation—covering MPC, oblivious algorithms, and adjacent primitives—toward higher efficiency, stronger privacy, and adversarial robustness. Recently, I have pursued upward extensions to the application layer (especially the secure AI/LLM infrastructure and private <span style="color:rgb(207, 205, 205);">Non-</span>KYC services for the stablecoin ecosystem) and downward extensions to the fundamental network/computation layer (architectures optimized/aligned for secure computation).
+My research advances secure computation—covering MPC, oblivious algorithms, and adjacent primitives—toward higher efficiency, stronger privacy, and adversarial robustness. Recently, I have pursued upward extensions to the application layer  and downward extensions to the fundamental network/computation layer.
 
 <!-- My research focuses on advancing secure computation—covering multi-party computation, oblivious algorithms, and related techniques—by improving efficiency, enhancing privacy, and achieving robust adversarial resilience. Recently, I have been exploring secure infrastructure for trustworthy LLM/AI ecosystems. -->
 
-Beyond academia, I also work on several "research-to-impact" initiatives that aim to translate privacy and security research into deployable systems and industry collaborations.
+Beyond academia, I also work on several "research-to-impact" initiatives supported by various funding programs, focusing on building practical, privacy-preserving solutions grounded in cryptographic principles.
+
 <!-- I lead several ventures. _XCrypt@CityUHK_, a secure computation startup seed-funded by the HK Tech 300-HKSTP Ideation Joint Programs, focuses on building practical, privacy-preserving solutions grounded in cryptographic principles. Concurrently, I am also working on _NexaGuard Labs@HKUST-GZ_, which specializes in secure, auditable intelligent network routing services for the next-generation Internet. -->
 
 # Research Interests
 
-- **Secure Computation** (Multi-Party Computation, Oblivious RAM, Trusted Execution Environment, etc.)
+- **Privacy-Enhancing Technologies** (Multi-Party Computation, Trusted Execution Environment, Zero-Knowledge Proof, Differential Privacy, etc.)
 
-- **Anonymous Communication** (Sender/Receiver Anonymity, Metadata Privacy, etc.)
+- **Anonymous Communication Systems** (Sender/Receiver Anonymity, Metadata Privacy, Obfuscation, etc.)
 
-- **Privacy-Preserving Analytics & ML** (Multi-Party Computation, Differential Privacy, Secure Inference/Training, etc.)
+- **Privacy-Preserving Analytics & ML** (Federated Learning, Secure Inference/Training, etc.)
 
 <!-- - **Secure AI/LLM Infrastructure** (LLM Toolchain Security, etc.) -->
 
@@ -173,16 +175,17 @@ Cong Wang, Xiaohua Jia, and Qian Wang.</span><br>
 # Experiences
 
 ### Educations
-- *2021.03 - 2025.07*, City University of Hong Kong, Ph.D. in Computer Science. 
-- *2014.09 - 2018.07*, Shanghai Jiao Tong University, B.Eng. in Computer Science and Technology. 
+- *2021 - 2025*, City University of Hong Kong, Ph.D. in Computer Science. 
+- *2014 - 2018*, Shanghai Jiao Tong University, B.Eng. in Computer Science and Technology. 
 
 ### Work Experiences
-- *2025.09 - Present*, Postdoctoral Fellow, The Laboratory for AI-Powered Financial Technologies Limited (AIFT). 
-- *2020.09 - 2021.03*, City University of Hong Kong, Research Assistant. 
-- *2020.01 - 2020.08*, Sangfor Technologies Inc., Software Engineer.
-- *2018.07 - 2019.12*, Intel Asia-Pacific R&D Center, R&D Engineer.
-- *2018.02 - 2019.06*, Intel Asia-Pacific R&D Center, Software Engineer Intern.
-- *2017.06 - 2017.09*, Lab of Cryptology and Computer Security (LoCCS), Shanghai Jiao Tong University, Research Intern.
+- *2025 - Present*, Postdoctoral Fellow, The Laboratory for AI-Powered Financial Technologies (AIFT). 
+- *2025 - Present*, Director, Synapiron Ltd.
+- *2025 - Present*, Person-in-Charge & Co-Founder, X-Crypt.
+- *2020 - 2021*, City University of Hong Kong, Research Assistant. 
+- *2019 - 2020*, Sangfor Technologies Inc., Software Engineer.
+- *2018 - 2019*, Intel Asia-Pacific R&D Center, Software Engineer Intern | R&D Engineer.
+- *2017 - 2018*, Lab of Cryptology and Computer Security (LoCCS), Shanghai Jiao Tong University, Research Intern.
 
 <span class='anchor' id='-teaching-and-service'></span>
 # Teaching and Services
@@ -194,6 +197,6 @@ Cong Wang, Xiaohua Jia, and Qian Wang.</span><br>
 - *2025*, TA and course developer for CS2311 Computer Programming (Undergraduate).
   
 ### Community Service
-- Serve as a reviewer for IEEE IoTJ, IEEE TSC.
-- Serve as an external reviewer for IEEE S&P, USENIX Security, IEEE INFOCOM, IEEE TDSC, ACM MM, ESORICS, IEEE ICNP, ACM AsiaCCS, IEEE ICDCS, ICICS, WPES, etc.
-- Serve as a student helper for IEEE ICDCS'23.
+- Serve as a reviewer for IEEE IoTJ, IEEE TSC, IEEE TDSC, MSN, CJE (电子学报).
+- Serve as an external reviewer for IEEE S&P, USENIX Security, IEEE INFOCOM, IEEE TDSC, ACM MM, ICLR, ESORICS, IEEE ICNP, ACM AsiaCCS, IEEE ICDCS, ICICS, WPES, etc.
+- Serve as a student helper for IEEE ICDCS.
