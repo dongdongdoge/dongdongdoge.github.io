@@ -329,7 +329,9 @@ $arxiv-color: #b71c1c;
     max-width: none;
   }
   .publication-item .pub-media img {
-    height: auto; /* let image expand naturally on mobile */
+    height: 180px; /* fixed height for consistent layout on mobile */
+    object-fit: cover;
+    object-position: center;
   }
   .publication-item .pub-content {
     order: 1;

@@ -17,24 +17,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm Wentao DONG, (董文韬, pronounced like "when-top-down"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies (AIFT), working with 
-Prof. Xiaohua JIA. I earned my Ph.D. degree in Computer Science from City University of Hong Kong under the supervision of Prof. Cong WANG. 
+I'm Wentao DONG, (董文韬, pronounced like "when-top-down"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies (AIFT), working under the mentorship of Prof. Xiaohua JIA. I earned my Ph.D. in Computer Science from City University of Hong Kong, supervised by Prof. Cong Wang.
 
-My research advances secure computation—covering MPC, oblivious algorithms, and adjacent primitives—toward higher efficiency, stronger privacy, and adversarial robustness. Recently, I have pursued upward extensions to the application layer  and downward extensions to the fundamental network/computation layer.
+My research advances privacy-preserving computation—covering MPC, TEE, DP, ZKP, and adjacent primitives—toward higher efficiency, stronger privacy, and adversarial robustness. I currently explore vertical integrations of these primitives: with upward extensions to the application layer (i.e., tailoring-crypto-for-services); and with downward optimizations to the fundamental network/computation layer (i.e., hardening-foundations-for-crypto).
 
-<!-- My research focuses on advancing secure computation—covering multi-party computation, oblivious algorithms, and related techniques—by improving efficiency, enhancing privacy, and achieving robust adversarial resilience. Recently, I have been exploring secure infrastructure for trustworthy LLM/AI ecosystems. -->
-
-Beyond academia, I also work on several "research-to-impact" initiatives supported by various funding programs, focusing on building practical, privacy-preserving solutions grounded in cryptographic principles.
+Beyond academia, I also lead several "research-to-impact" initiatives supported by various funding programs, focusing on building practical, privacy-preserving solutions grounded in cryptographic principles.
 
 <!-- I lead several ventures. _XCrypt@CityUHK_, a secure computation startup seed-funded by the HK Tech 300-HKSTP Ideation Joint Programs, focuses on building practical, privacy-preserving solutions grounded in cryptographic principles. Concurrently, I am also working on _NexaGuard Labs@HKUST-GZ_, which specializes in secure, auditable intelligent network routing services for the next-generation Internet. -->
 
 # Research Interests
 
-- **Privacy-Enhancing Technologies** (Multi-Party Computation, Trusted Execution Environment, Zero-Knowledge Proof, Differential Privacy, etc.)
+- **Privacy-Enhancing Technologies** (Multi-party computation, Trusted execution environment, Zero-knowledge proof, Differential privacy, etc.)
 
-- **Anonymous Communication Systems** (Sender/Receiver Anonymity, Metadata Privacy, Obfuscation, etc.)
+- **Anonymous Communication Systems** (Sender/receiver anonymity, Metadata privacy, Traffic obfuscation, etc.)
 
-- **Privacy-Preserving Analytics & ML** (Federated Learning, Secure Inference/Training, etc.)
+- **Privacy-Preserving Analytics & ML** (Federated analytics/learning, Secure inference/training, etc.)
 
 <!-- - **Secure AI/LLM Infrastructure** (LLM Toolchain Security, etc.) -->
 
@@ -78,7 +75,9 @@ Beyond academia, I also work on several "research-to-impact" initiatives support
     <strong>Doppio: Communication-Efficient and Secure Multi-Party Shuffle Differential Privacy</strong>,<br>
     <span style="font-size: 0.9em;"><span style="font-weight: bold;">Wentao Dong</span>, Yang Cao, Cong Wang, and Wei-Bin Lee.</span><br>
     <span style="font-size: 0.9em; font-style: italic;">The 52nd International Conference on Very Large Data Bases (VLDB'26).</span>
-    <span style="font-size: 0.9em;"><a href="/about" target="_blank" rel="noopener" aria-label="external link" title="Open link" class="paper-link-gray">[To appear]</a><a href="https://github.com/dongdongdoge/mpsdp.git" target="_blank" rel="noopener" aria-label="external link" title="Open link" class="paper-link-gray">[Code]</a></span>
+    <span style="font-size: 0.9em;"><a href="/about" target="_blank" rel="noopener" aria-label="external link" title="Open link" class="paper-link-gray">[To appear]</a>
+    <!-- <a href="https://github.com/dongdongdoge/mpsdp.git" target="_blank" rel="noopener" aria-label="external link" title="Open link" class="paper-link-gray">[Code]</a> -->
+    </span>
   </div>
   <div class="pub-media">
     <img src="/others/vldb_doppio_archfig.jpg" alt="Doppio thumbnail">
@@ -153,11 +152,6 @@ Beyond academia, I also work on several "research-to-impact" initiatives support
 
 *The 52nd International Conference on Very Large Data Bases (VLDB'26).* -->
 
-<!-- - **Fast TEE-Shielded Inference for On-Device Model Protection**, <span style="float:right;"><a href="/about" target="_blank" rel="noopener" aria-label="external link" title="Open link" style="color: #007acc; text-decoration: none; padding: 4px 8px; border-radius: 4px; transition: all 0.2s ease;"><i class="fas fa-external-link-alt" style="font-size: 14px;"></i></a></span><span style="display:block; clear:both;"></span>
-Zikai Mao, Lingchen Zhao, Lei Xu, <span style="font-weight: bold;">Wentao Dong</span>, Shenyi Zhang, Cong Wang, and Qian Wang.<br>
-*arXiv Preprint (2025).*
-*The 32nd ACM SIGSAC Conference on Computer and Communications Security (ACM CCS'25).*  -->
-
 <div class="publication-item">
   <div class="pub-content">
     <strong>Metadata-private Messaging without Coordination</strong>,<br>
@@ -171,6 +165,18 @@ Cong Wang, Xiaohua Jia, and Qian Wang.</span><br>
   </div>
   </div>
 
+<div class="publication-item">
+  <div class="pub-content">
+    <strong>Fast TEE-Shielded Inference for On-Device Model Protection</strong>,<br>
+    <span style="font-size: 0.9em;">Zikai Mao, Lingchen Zhao, Lei Xu, <span style="font-weight: bold;">Wentao Dong</span>, Shenyi Zhang, Cong Wang, and Qian Wang.</span><br>
+    <span style="font-size: 0.9em; font-style: italic;">arXiv Preprint (2025).</span>
+    <span style="font-size: 0.9em;"><a href="https://www.arxiv.org/abs/2512.07495" target="_blank" rel="noopener" aria-label="external link" title="Open link" class="paper-link">[Paper]</a></span>
+  </div>
+  <div class="pub-media">
+    <img src="/others/amulet.png" alt="Preprint thumbnail">
+  </div>
+  </div>
+
 <span class='anchor' id='-experiences'></span>
 # Experiences
 
@@ -180,11 +186,11 @@ Cong Wang, Xiaohua Jia, and Qian Wang.</span><br>
 
 ### Work Experiences
 - *2025 - Present*, Postdoctoral Fellow, The Laboratory for AI-Powered Financial Technologies (AIFT). 
-- *2025 - Present*, Director, Synapiron Ltd.
+- *2025 - Present*, Director & Co-Founder, Synapiron Ltd.
 - *2025 - Present*, Person-in-Charge & Co-Founder, X-Crypt.
 - *2020 - 2021*, City University of Hong Kong, Research Assistant. 
 - *2019 - 2020*, Sangfor Technologies Inc., Software Engineer.
-- *2018 - 2019*, Intel Asia-Pacific R&D Center, Software Engineer Intern | R&D Engineer.
+- *2018 - 2019*, Intel Asia-Pacific R&D Center, Software Engineer Intern, Research & Development Engineer.
 - *2017 - 2018*, Lab of Cryptology and Computer Security (LoCCS), Shanghai Jiao Tong University, Research Intern.
 
 <span class='anchor' id='-teaching-and-service'></span>
@@ -195,6 +201,7 @@ Cong Wang, Xiaohua Jia, and Qian Wang.</span><br>
 - *2022*, TA for CS3402 Database Systems (Undergraduate).
 - *2023,2024*, TA for CS2311 Computer Programming (Undergraduate).
 - *2025*, TA and course developer for CS2311 Computer Programming (Undergraduate).
+- *2025*, Guest course developer for CS6290 Privacy-Enhancing Technologies [MPC, TEE, DP, ZKP sessions] (Graduate).
   
 ### Community Service
 - Serve as a reviewer for IEEE IoTJ, IEEE TSC, IEEE TDSC, MSN, CJE (电子学报).
