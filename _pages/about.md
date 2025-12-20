@@ -17,11 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I'm Wentao DONG, (董文韬, pronounced like "when-top-down"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies (AIFT), working under the mentorship of Prof. Xiaohua JIA. I earned my Ph.D. in Computer Science from City University of Hong Kong, supervised by Prof. Cong Wang.
+I'm Wentao DONG, (董文韬, pronounced like "when-top-down*"), a Postdoctoral Fellow at The Laboratory for AI-Powered Financial Technologies (AIFT), working under the mentorship of Prof. Xiaohua JIA. I earned my Ph.D. in Computer Science from City University of Hong Kong, supervised by Prof. Cong Wang.
 
 My research advances privacy-preserving computation—covering MPC, TEE, DP, ZKP, and adjacent primitives—toward higher efficiency, stronger privacy, and adversarial robustness. I currently explore vertical integrations of these primitives: with upward extensions to the application layer (i.e., tailoring-crypto-for-services); and with downward optimizations to the fundamental network/computation layer (i.e., hardening-foundations-for-crypto).
 
 Beyond academia, I also lead several "research-to-impact" initiatives supported by various funding programs, focusing on building practical, privacy-preserving solutions grounded in cryptographic principles.
+
+<p style="color: gray; font-size: 0.85em; margin-top: 0.5em;"><em>* Phonetically, it's a name; philosophically, it's a heuristic. While "Top-Down" reflects my commitment to mission-driven system design (where services define the crypto), the "When" is a constant reminder of the "Bottom-Up" reality: the hardware's limits and cryptographic truths that must inevitably shape the service. My research is the art of finding the right answer to "When Top-Down?"—balancing elegant abstraction with brutal performance.</em></p>
 
 <!-- I lead several ventures. _XCrypt@CityUHK_, a secure computation startup seed-funded by the HK Tech 300-HKSTP Ideation Joint Programs, focuses on building practical, privacy-preserving solutions grounded in cryptographic principles. Concurrently, I am also working on _NexaGuard Labs@HKUST-GZ_, which specializes in secure, auditable intelligent network routing services for the next-generation Internet. -->
 

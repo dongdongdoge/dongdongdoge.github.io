@@ -31,6 +31,7 @@ sidebar:
       <h1><img src="/images/xcrypt.png" alt="X-Crypt" class="hero-logo"> X-Crypt (極密)—Your privacy, your control.</h1>
       <h2>Practical secure computation for real businesses.</h2>
       <p>We design, build, and operate privacy-first data products powered by MPC, ORAM, and TEE — delivering compliance-grade security without sacrificing usability or speed.</p>
+      <font color="gray" size="2">* Phonetically, it's a name; philosophically, it's a heuristic. While "Top-Down" reflects my commitment to mission-driven system design (where services define the crypto), the "When" is a constant reminder of the "Bottom-Up" reality: the hardware's limits and cryptographic truths that must inevitably shape the service. My research is the art of finding the right answer to "When Top-Down?"—balancing elegant abstraction with brutal performance.</font>
       <a class="xcrypt-cta" href="#contact">Talk to us</a>
     </div>
     <div class="mock">
