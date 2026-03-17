@@ -17,7 +17,7 @@
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
       {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+        <li class="sidebar-lead">{{ site.description }}</li>
       {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
@@ -120,15 +120,22 @@
       {% endif %}
       
       <!-- Useful Links Section -->
-      <li style="margin-top: 1.5em; border-top: 1px solid #e3e3e3; padding-top: 1em;">
-        <h4 style="margin: 0 0 0.8em 0; color: #2c3e50; font-size: 0.9em;"> Useful Links: </h4>
+      <li class="sidebar-divider" aria-hidden="true"></li>
+      <li class="sidebar-section-title">Useful links</li>
+      <li>
+        <a href="https://people.engr.tamu.edu/guofei/sec_conf_stat.htm" target="_blank" rel="noopener">
+          <i class="fas fa-fw fa-chart-bar" aria-hidden="true"></i> Sec Conf Stats
+        </a>
       </li>
-      <li><a href="https://people.engr.tamu.edu/guofei/sec_conf_stat.htm" target="_blank"><i class="fas fa-fw fa-chart-bar" aria-hidden="true"></i> Sec Conf Stats </a> (<span style="font-size: 0.8em; color: #666; font-style: italic;">by Prof. Guofei GU</span>)</li>
-      <li><a href="http://jianying.space/conference-ranking.html" target="_blank"><i class="fas fa-fw fa-sort-numeric-down" aria-hidden="true"></i> Sec Conf Ranks</a> (<span style="font-size: 0.8em; color: #666; font-style: italic;">by Prof. Jianying ZHOU</span>)</li>
-      <li><a href="https://github.com/rdragos/awesome-mpc" target="_blank"><i class="fas fa-fw fa-globe" aria-hidden="true"></i>Awesome MPC</a></li>
-      <li><a href="https://securecomputation.org/" target="_blank"><i class="fas fa-fw fa-globe" aria-hidden="true"></i>Pragmatic MPC</a></li>
-      <li><a href="https://eprint.iacr.org/2016/046.pdf" target="_blank"><i class="fas fa-fw fa-globe" aria-hidden="true"></i>How to Simulate It?</a></li>
-      <li><a href="https://www.multipartycomputation.com/home" target="_blank"><i class="fas fa-fw fa-globe" aria-hidden="true"></i>TPMPC Workshop</a></li>
+      <li>
+        <a href="http://jianying.space/conference-ranking.html" target="_blank" rel="noopener">
+          <i class="fas fa-fw fa-sort-numeric-down" aria-hidden="true"></i> Sec Conf Ranks
+        </a>
+      </li>
+      <li><a href="https://github.com/rdragos/awesome-mpc" target="_blank" rel="noopener"><i class="fas fa-fw fa-globe" aria-hidden="true"></i> Awesome MPC</a></li>
+      <li><a href="https://securecomputation.org/" target="_blank" rel="noopener"><i class="fas fa-fw fa-globe" aria-hidden="true"></i> Pragmatic MPC</a></li>
+      <li><a href="https://eprint.iacr.org/2016/046.pdf" target="_blank" rel="noopener"><i class="fas fa-fw fa-globe" aria-hidden="true"></i> How to Simulate It?</a></li>
+      <li><a href="https://www.multipartycomputation.com/home" target="_blank" rel="noopener"><i class="fas fa-fw fa-globe" aria-hidden="true"></i> TPMPC Workshop</a></li>
 
 
       <!-- <li><a href="https://www.usenix.org/" target="_blank"><i class="fas fa-fw fa-globe" aria-hidden="true"></i> USENIX Security </a></li>
@@ -139,58 +146,11 @@
       <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206" target="_blank"><i class="fas fa-fw fa-book-open" aria-hidden="true"></i> IEEE TIFS</a></li> -->
       
       <!-- Visitor Map Widget -->
-      <li style="margin-top: 1.2em; border-top: 1px solid #e3e3e3; padding-top: 0.8em;">
-        <h4 style="margin: 0 0 0.6em 0; color: #2c3e50; font-size: 0.9em;">Visitor Map</h4>
-        <div style="text-align: center; margin: 0.5em 0;">
-          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=8I5MYrj1fQE6W59JwQJQ-VgfmI-XPWoh6ISDAkHuJY0&cl=ffffff&w=a"></script>
-        </div>
+      <li class="sidebar-divider" aria-hidden="true"></li>
+      <li class="sidebar-section-title">Visitor map</li>
+      <li class="sidebar-widget sidebar-widget--clustrmaps">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=8I5MYrj1fQE6W59JwQJQ-VgfmI-XPWoh6ISDAkHuJY0&cl=ffffff&w=a"></script>
       </li>
-      
-      <!-- Mobile-responsive styles for sidebar -->
-      <style>
-      @media (max-width: 768px) {
-          .author__urls {
-              font-size: 0.9em;
-          }
-          .author__urls li {
-              margin-bottom: 0.8em;
-              padding: 0.5em 0;
-          }
-          .author__urls a {
-              padding: 0.3em 0;
-              display: block;
-          }
-          .author__urls i {
-              margin-right: 0.8em;
-              width: 1.2em;
-          }
-          .author__urls h4 {
-              font-size: 1em;
-              margin-bottom: 0.6em;
-          }
-          .author__urls .fa-fw {
-              width: 1.2em !important;
-          }
-          /* Optimize visitor map for mobile */
-          #clustrmaps {
-              max-width: 100% !important;
-              height: auto !important;
-          }
-      }
-      
-      @media (max-width: 480px) {
-          .author__urls {
-              font-size: 0.85em;
-          }
-          .author__urls li {
-              margin-bottom: 0.6em;
-              padding: 0.4em 0;
-          }
-          .author__urls a {
-              padding: 0.2em 0;
-          }
-      }
-      </style>
     </ul>
       <div class="author__urls_sm">
       {% if author.uri %}

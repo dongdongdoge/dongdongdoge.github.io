@@ -5,11 +5,11 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  animation: intro 0.3s both;
-  animation-delay: 0.35s;
+  margin-top: 0.85rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  animation: none;
+  animation-delay: 0s;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -17,10 +17,31 @@
 }
 
 .page {
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(0 of 12);
+  /*
+   * Default: single-column layout (no sidebar).
+   * IMPORTANT: do not apply to xcrypt-mode pages which still use a sidebar.
+   */
+  body:not(.xcrypt-mode) & {
+    @include breakpoint($large) {
+      float: none;
+      width: 100%;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* X-Crypt pages: restore grid layout with sidebar */
+  body.xcrypt-mode & {
+    @include breakpoint($large) {
+      @include span(10 of 12 last);
+      @include prefix(0.5 of 12);
+      @include suffix(0 of 12);
+      float: left;
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   .page__inner-wrap {
@@ -49,6 +70,17 @@
 }
 
 .page__content {
+  max-width: none;
+  font-size: 1.02rem;
+  line-height: 1.58;
+  letter-spacing: 0.002em;
+
+  /* subtle design tokens for the homepage */
+  --accent: #{$link-color};
+  --ink: #{mix(#000, $text-color, 82%)};
+  --muted: #{mix(#fff, $text-color, 40%)};
+  --paper: #fbfcff;
+
   #about-me{
     margin-top: -10em;
       &:before { 
@@ -60,10 +92,299 @@
         margin-top: -10em;
     }
   }
-  h1 {
-    margin-top: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+  h1 { margin-top: 0.95em; padding-bottom: 0; border-bottom: 0; }
+  h2 { margin-top: 1.05em; }
+  h3 { margin-top: 0.85em; }
+
+  h1, h2, h3 {
+    letter-spacing: -0.012em;
+  }
+
+  /* Make section headings look intentional (not heavy) */
+  h2 {
+    position: relative;
+    padding-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+  h2:after {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.28;
+    border-radius: 999px;
+    margin-top: 0.35rem;
+  }
+
+  .section-chip {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(31, 79, 209, 0.18);
+    background: rgba(31, 79, 209, 0.06);
+    color: rgba(31, 79, 209, 0.9);
+    font-size: 0.72em;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+  }
+
+  /* Homepage header block: minimal but branded */
+  .home-header {
+    margin: 0.15rem 0 0.85rem 0;
+    padding: 0.55rem 0 0.1rem 0;
+    border-bottom: 1px solid rgba(15, 27, 64, 0.10);
+  }
+
+  .home-header__grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem 1rem;
+    align-items: start;
+  }
+
+  @media (max-width: 640px) {
+    .home-header__grid {
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+    }
+  }
+
+  .home-header__name {
+    margin: 0;
+    font-size: 1.55rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-family: $serif;
+  }
+
+  .home-header__mark {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    border: 1px solid rgba(31, 79, 209, 0.22);
+    background: rgba(255, 255, 255, 0.7);
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  }
+
+  @media (max-width: 640px) {
+    .home-header__mark {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+    }
+  }
+
+  .home-header__mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .home-header__subtitle {
+    margin: 0.2rem 0 0.35rem 0;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .home-header__tagline {
+    margin: 0.15rem 0 0.45rem 0;
+    color: var(--ink);
+    font-weight: 650;
+  }
+
+  .home-links {
+    margin: 0.15rem 0 0.35rem 0;
+    font-size: 0.92em;
+    color: var(--muted);
+  }
+  .home-links a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(31, 79, 209, 0.22);
+    padding-bottom: 1px;
+  }
+  .home-links a:hover {
+    border-bottom-color: rgba(31, 79, 209, 0.45);
+    text-decoration: none;
+  }
+
+  .home-links--right {
+    margin: 0.15rem 0 0 0;
+    text-align: left;
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .home-links--right {
+      text-align: left;
+      white-space: normal;
+    }
+  }
+
+  /* Publications as a designed list */
+  .pub-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .pub-list > li {
+    padding: 0.52rem 0;
+  }
+  .pub-list > li + li {
+    margin-top: 0.05rem;
+  }
+  .pub-title {
+    font-weight: 750;
+    color: var(--ink);
+  }
+  .pub-meta {
+    margin-top: 0.08rem;
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+
+  /* Minimal publication type tag (J/C/W/P) */
+  .pub-type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35em;
+    height: 1.35em;
+    margin-left: 0.35rem;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 27, 64, 0.18);
+    background: rgba(255, 255, 255, 0.70);
+    color: rgba(15, 27, 64, 0.72);
+    font-weight: 900;
+    font-size: 0.78em;
+    letter-spacing: 0.02em;
+    transform: translateY(-0.5px);
+    user-select: none;
+  }
+
+  .pub-type--j { border-color: rgba(15, 27, 64, 0.18); }
+  .pub-type--c { border-color: rgba(31, 79, 209, 0.22); color: rgba(31, 79, 209, 0.78); }
+  .pub-type--w { border-color: rgba(31, 79, 209, 0.18); color: rgba(31, 79, 209, 0.65); }
+  .pub-type--p { border-color: rgba(15, 27, 64, 0.18); color: rgba(15, 27, 64, 0.65); }
+
+  .pub-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.08rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(31, 79, 209, 0.18);
+    background: rgba(31, 79, 209, 0.06);
+    color: rgba(31, 79, 209, 0.9);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.86em;
+    letter-spacing: 0.01em;
+  }
+
+  .pub-tags {
+    margin-left: 0.4rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    vertical-align: baseline;
+  }
+
+  /* pub tags/links removed for minimal look */
+
+  /* keep lists compact and readable (CV-like) */
+  ul, ol {
+    margin-top: 0.35rem;
+    margin-bottom: 1rem;
+    padding-inline-start: 1.2em;
+  }
+
+  ul li,
+  ol li {
+    margin-bottom: 0.35rem;
+  }
+
+  /* tighten subheadings rhythm */
+  h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.3rem;
+    color: var(--ink);
+  }
+
+  /* ==========================================================
+     CV-style timeline list (for experience/teaching/service)
+     ========================================================== */
+  .cv-list {
+    margin: 0.25rem 0 0.8rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cv-item {
+    display: grid;
+    grid-template-columns: 9.25rem 1fr;
+    gap: 0.65rem;
+    padding: 0.25rem 0;
+  }
+
+  @media (max-width: 640px) {
+    .cv-item {
+      grid-template-columns: 1fr;
+      gap: 0.15rem;
+      padding: 0.4rem 0;
+    }
+  }
+
+  .cv-when {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .cv-when {
+      white-space: normal;
+    }
+  }
+
+  .cv-what {
+    color: var(--ink);
+  }
+
+  .cv-where {
+    color: var(--muted);
+  }
+
+  .cv-meta {
+    margin-top: 0.08rem;
+    color: var(--muted);
+    font-size: 0.94em;
+  }
+
+  /* Research maps (two stacked images, compact) */
+  .research-maps {
+    margin: 0.35rem 0 0.45rem 0;
+  }
+
+  .research-maps img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 27, 64, 0.08);
+    background: #fff;
+  }
+
+  .research-maps img + img {
+    margin-top: 0.6rem;
   }
 
   p, li, dl {
@@ -85,6 +406,8 @@
 
   a {
     text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.16em;
 
     &:hover {
       text-decoration: underline;
@@ -115,6 +438,21 @@
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
+  }
+}
+
+/* ==========================================================
+   Academic landing page utilities (home/about)
+   ========================================================== */
+
+.page__content {
+  .muted {
+    color: mix(#fff, $text-color, 35%);
+  }
+
+  .microcopy {
+    font-size: 0.92em;
+    color: mix(#fff, $text-color, 38%);
   }
 }
 
@@ -303,6 +641,11 @@
   font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
+}
+
+/* Home: remove nav chrome for a cleaner, "top-tier" look */
+body.is-home .masthead {
+  display: none;
 }
 
 .page__comments-form {

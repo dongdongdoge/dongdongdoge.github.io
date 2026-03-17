@@ -49,6 +49,22 @@
   }
 }
 
+/* ==========================================================
+   Unified "academic card" sidebar (global, not page-specific)
+   ========================================================== */
+
+.sidebar.sticky {
+  @include breakpoint($large) {
+    position: sticky;
+    top: 84px;
+    padding: 1rem 1rem;
+    border: 1px solid rgba(15, 27, 64, 0.08);
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  }
+}
+
 /* X-Crypt sidebar enhancements */
 body.xcrypt-mode .sidebar {
   position: sticky;
@@ -311,7 +327,7 @@ body.xcrypt-mode .sidebar .author__urls > li + li {
     box-shadow: none;
   }
 
-  /* Hide all social links on mobile only */
+  /* Mobile: show compact icon row instead of long list */
   @media (max-width: 1023px) {
     display: none !important;
   }
@@ -373,7 +389,7 @@ body.xcrypt-mode .sidebar .author__urls > li + li {
 .author__urls_sm{
   padding: .25em;
   font-size: 1.75em;
-  display: none; /* Hide on all devices by default */
+  display: none; /* desktop default */
   a {
     color: inherit;
     text-decoration: none;
@@ -383,5 +399,108 @@ body.xcrypt-mode .sidebar .author__urls > li + li {
   }
   @include breakpoint($large) {
     display: none;
+  }
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    align-items: center;
+    padding: 0.35rem 0;
+    font-size: 1.35em;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 27, 64, 0.10);
+      background: #fff;
+      box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
+
+      &:hover {
+        border-color: rgba(15, 107, 255, 0.30);
+        background: rgba(15, 107, 255, 0.06);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* Sidebar content atoms used in author-profile.html */
+.sidebar-lead {
+  white-space: normal;
+  margin: 0 0 0.9rem 0;
+  color: mix(#fff, $text-color, 32%);
+  line-height: 1.55;
+}
+
+.sidebar-divider {
+  list-style: none;
+  height: 1px;
+  background: rgba(15, 27, 64, 0.08);
+  margin: 0.9rem 0 0.8rem 0;
+}
+
+.sidebar-section-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.85rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0f2b5e;
+}
+
+.sidebar-note {
+  font-size: 0.85em;
+  color: mix(#fff, $text-color, 42%);
+  font-style: italic;
+  margin-left: 0.15rem;
+}
+
+.sidebar-widget {
+  white-space: normal;
+  margin: 0.25rem 0 0.35rem 0;
+}
+
+.sidebar-widget--clustrmaps {
+  display: block;
+}
+
+.sidebar-widget--clustrmaps #clustrmaps,
+.sidebar-widget--clustrmaps iframe,
+.sidebar-widget--clustrmaps canvas,
+.sidebar-widget--clustrmaps svg {
+  max-width: 100% !important;
+}
+
+/* Make sidebar links feel "academic" (subtle, consistent) */
+.sidebar .author__urls li {
+  margin: 0.12rem 0;
+}
+
+.sidebar .author__urls a {
+  display: block;
+  padding: 0.32rem 0.35rem;
+  border-radius: 8px;
+  color: mix(#000, $text-color, 72%);
+  text-decoration: none;
+
+  i {
+    width: 1.2em;
+    margin-right: 0.55rem;
+    color: mix(#000, $text-color, 45%);
+  }
+
+  &:hover {
+    background: rgba(15, 107, 255, 0.06);
+    color: $link-color;
+    text-decoration: none;
+
+    i {
+      color: $link-color;
+    }
   }
 }

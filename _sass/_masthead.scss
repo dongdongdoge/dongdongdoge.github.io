@@ -3,20 +3,18 @@
    ========================================================================== */
 
 .masthead {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  border-bottom: 1px solid $border-color;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-  z-index: 20;
+  position: static;
+  top: auto;
+  background-color: transparent;
+  border-bottom: 0;
+  -webkit-animation: none;
+          animation: none;
+  z-index: 1;
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em;
+    padding: 0.25rem 0;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {

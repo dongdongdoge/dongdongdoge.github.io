@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Wentao's Page"
-description              : "TO SECURE IS TO DESIGN."
-repository               : "dongdongdoge.github.io"
+# description              : "TO SECURE IS TO DESIGN."
+# repository               : "dongdongdoge.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics
@@ -27,8 +27,8 @@ author:
   location         :
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=wd-RMiIAAAAJ&hl=en"
-  email            : "dongdongdoge@gmail.com"
+  googlescholar    : 
+  email            : 
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : dongdongdoge
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
@@ -45,7 +45,7 @@ author:
   lastfm           :
   linkedin         : # e.g., "linkedin username"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : "https://orcid.org/0000-0002-9881-1180"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
