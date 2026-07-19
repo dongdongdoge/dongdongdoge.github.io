@@ -3,23 +3,20 @@
    ========================================================================== */
 
 .masthead {
-  position: static;
-  top: auto;
-  background-color: transparent;
-  border-bottom: 0;
-  -webkit-animation: none;
-          animation: none;
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(23, 32, 44, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.25rem 0;
-    font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
+    max-width: 1040px;
+    padding: 0.7rem 2rem;
+    font-family: $sans-serif;
 
     nav {
       z-index: 10;
@@ -31,32 +28,53 @@
   }
 }
 
-.masthead__menu {
-
-  ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style-type: none;
-  }
-}
-
-.masthead__menu-home-item {
-  @include breakpoint($medium) {
-    display: block !important;
-  }
-  display: none !important;
+.masthead__menu ul {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  list-style: none;
 }
 
 .masthead__menu-item {
   display: block;
-  list-style-type: none;
+  margin: 0;
+  list-style: none;
   white-space: nowrap;
-
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
-  }
 }
 
+.masthead__menu-item--brand {
+  margin-right: 2.5rem;
+}
 
+.site-brand {
+  display: inline-flex !important;
+  align-items: center;
+  margin: 0 !important;
+  padding: 0.3rem 0 !important;
+}
+
+.site-brand:before {
+  display: none !important;
+}
+
+.site-brand__name {
+  color: #17202c;
+  font-family: $serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+
+@media (max-width: 700px) {
+  .masthead__inner-wrap {
+    padding: 0.62rem 1.25rem;
+  }
+
+  .masthead__menu-item--brand {
+    margin-right: 1.2rem;
+  }
+
+  .site-brand__name {
+    font-size: 0.82rem;
+  }
+}

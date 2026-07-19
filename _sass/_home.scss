@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Minimal academic homepage
+   ========================================================================== */
+
+body.is-home {
+  --academic-ink: #1d242a;
+  --academic-muted: #626d76;
+  --academic-link: #2a5d7a;
+  --academic-rule: #dfe3e2;
+
+  background: #fbfbf9;
+  color: var(--academic-ink);
+
+  .masthead {
+    display: none;
+  }
+
+  #main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .page,
+  .page__inner-wrap,
+  .page__content {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .page__content {
+    color: var(--academic-ink);
+    font-size: 0.96rem;
+    line-height: 1.65;
+
+    #about-me {
+      margin: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ol,
+    ul {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--academic-ink);
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0 0 0.35rem;
+      border: 0;
+      border-bottom: 1px solid var(--academic-rule);
+      font-family: $serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: -0.018em;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    h3 {
+      font-family: $sans-serif;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--academic-link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+  }
+
+  ::selection {
+    background: #dfe9ed;
+  }
+
+  .classic-header {
+    padding: 4.1rem 0 3.35rem;
+    border-bottom: 1px solid var(--academic-rule);
+  }
+
+  .classic-header__body {
+    max-width: 44rem;
+  }
+
+  .classic-header h1 {
+    margin: 0 0 0.35rem;
+    font-family: $serif;
+    font-size: 2.65rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+
+  .classic-header h1 span {
+    margin-left: 0.35rem;
+    color: #858d95;
+    font-family: $sans-serif;
+    font-size: 0.38em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    vertical-align: 0.35em;
+  }
+
+  .classic-header__position {
+    margin-bottom: 0.3rem;
+    color: #4f5964;
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .classic-header__position a {
+    color: inherit;
+  }
+
+  .classic-header__mentors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.35rem;
+    margin-bottom: 0.8rem;
+    color: #737c84;
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+
+  .classic-header__mentors a {
+    color: #4b6576;
+    font-weight: 600;
+  }
+
+  .classic-header__mentor {
+    white-space: nowrap;
+  }
+
+  .classic-header__mentor-separator {
+    color: #b0b5b9;
+  }
+
+  .classic-header__name-note {
+    max-width: 43rem;
+    margin-bottom: 0.8rem;
+    color: #59646d;
+    font-family: $serif;
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  .classic-header__name-note em {
+    color: #555f69;
+    font-weight: 600;
+  }
+
+  .classic-header__bio {
+    max-width: 42rem;
+    margin-bottom: 0.7rem;
+    color: #333c43;
+    font-size: 0.9rem;
+    line-height: 1.62;
+  }
+
+  .classic-header__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.45rem;
+    margin: 0;
+    color: #a0a6ac;
+    font-size: 0.76rem;
+  }
+
+  .classic-header__links a {
+    font-weight: 600;
+  }
+
+  .classic-section {
+    scroll-margin-top: 1rem;
+    padding: 2.9rem 0;
+    border-bottom: 1px solid var(--academic-rule);
+  }
+
+  .classic-section__heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: baseline;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid var(--academic-rule);
+  }
+
+  .classic-section__heading h2 {
+    flex: 1;
+    border-bottom: 0;
+  }
+
+  .classic-section__heading > a {
+    flex: 0 0 auto;
+    font-size: 0.7rem;
+  }
+
+  .classic-publications {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .classic-publications > li {
+    display: grid;
+    grid-template-columns: 7.8rem minmax(0, 1fr);
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0.95rem 0;
+    border-bottom: 1px solid #e9eceb;
+  }
+
+  .classic-publications > li:last-child {
+    border-bottom: 0;
+  }
+
+  .classic-publications__venue {
+    padding-top: 0.08rem;
+    color: #586775;
+    font-family: $monospace;
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .classic-publications h3 {
+    margin: 0 0 0.2rem;
+    font-family: $sans-serif;
+    font-size: 0.9rem;
+    font-weight: 650;
+    line-height: 1.4;
+  }
+
+  .classic-publications h3 a {
+    color: inherit;
+  }
+
+  .classic-publications p {
+    margin: 0;
+    color: var(--academic-muted);
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  .classic-publications p strong {
+    color: #47515b;
+    font-weight: 700;
+  }
+
+  .classic-impact {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .classic-impact li {
+    display: grid;
+    grid-template-columns: 7.8rem minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1.05rem 0;
+    border-bottom: 1px solid #e9eceb;
+  }
+
+  .classic-impact li:last-child {
+    border-bottom: 0;
+  }
+
+  .classic-impact h3 {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .classic-impact h3 a {
+    color: var(--academic-link);
+  }
+
+  .classic-impact p {
+    margin: 0;
+    color: #3d454e;
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .classic-impact .classic-impact__meta {
+    margin-top: 0.15rem;
+    color: #76808a;
+    font-size: 0.7rem;
+  }
+
+  .classic-footer {
+    padding: 1.8rem 0 3rem;
+    color: #90979e;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 620px) {
+  body.is-home {
+    #main {
+      padding: 0 1.2rem;
+    }
+
+    .classic-header {
+      padding: 2.85rem 0 2.4rem;
+    }
+
+    .classic-header h1 {
+      font-size: 1.9rem;
+    }
+
+    .classic-header h1 span {
+      display: block;
+      margin: 0.3rem 0 0;
+      font-size: 0.34em;
+      vertical-align: 0;
+    }
+
+    .classic-section {
+      padding: 2.3rem 0;
+    }
+
+    .classic-publications > li {
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: 0.8rem;
+    }
+
+  }
+}
+
+@media (max-width: 400px) {
+  body.is-home {
+    .classic-publications > li {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    .classic-impact li {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    .classic-publications__venue {
+      color: var(--academic-link);
+    }
+  }
+}

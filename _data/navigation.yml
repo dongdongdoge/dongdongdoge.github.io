@@ -1,16 +1,13 @@
 # main links links
 main:
-  - title: "About Me"
-    url: "/"
+  - title: "Publications"
+    url: "/#publications"
 
-  - title: "Blogs"
+  - title: "Research to Impact"
+    url: "/#impact"
+
+  - title: "Writing"
     url: "/blog/"
 
-  - title: "X-Crypt"
-    url: "/x-crypt/"
-
-  - title: "NexaGuard Labs"
-    url: "/nexaguard/"
-
-  - title: "Stable Lens"
-    url: "/stable-lens/"
+  - title: "CV"
+    url: "/others/wentao-cv-26.pdf"
