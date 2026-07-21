@@ -1,4 +1,6 @@
+{% unless page.permalink == "/" or page.body_class == "is-research" %}
 <script src="/assets/js/main.min.js"></script>
+{% include fetch_google_scholar_stats.html %}
+{% endunless %}
 
 {% include analytics.html %}
-{% include fetch_google_scholar_stats.html %}

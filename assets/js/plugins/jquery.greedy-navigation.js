@@ -13,6 +13,11 @@ var $hlinks = $('#site-nav .hidden-links');
 var breaks = [];
 
 function updateNav() {
+  // The homepage intentionally hides the theme masthead. Avoid measuring and
+  // recursively reflowing a navigation element with no visible width.
+  if (!$nav.length || !$nav.is(':visible')) {
+    return;
+  }
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
