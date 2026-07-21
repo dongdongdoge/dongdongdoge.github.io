@@ -15,6 +15,7 @@ redirect_from:
   <span class="academic-nav__links">
     <a href="#publications" target="_self">Publications</a>
     <a href="/research/" target="_self">Research</a>
+    <a href="/teaching/" target="_self">Teaching</a>
     <a href="#impact" target="_self">Impact</a>
     <a href="/others/wentao-cv-26.pdf">CV</a>
   </span>
@@ -24,10 +25,10 @@ redirect_from:
   <div class="classic-header__body">
     <p class="classic-header__eyebrow">Privacy-preserving systems · Applied cryptography</p>
     <h1>Wentao Dong <span>董文韬</span></h1>
-    <p class="classic-header__position">Postdoctoral Fellow, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<br>Ph.D. in Computer Science, City University of Hong Kong</p>
+    <p class="classic-header__position">Researcher, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<br>Ph.D. in Computer Science, City University of Hong Kong</p>
     <p class="classic-header__mentors"><span class="classic-header__mentor">Current mentor: <a href="https://www.cs.cityu.edu.hk/~jia/">Prof. Xiaohua Jia</a> (ACM/IEEE Fellow)</span><span class="classic-header__mentor-separator">·</span><span class="classic-header__mentor">Ph.D. advisor: <a href="https://www.cs.cityu.edu.hk/~congwang/">Prof. Cong Wang</a> (IEEE Fellow)</span></p>
-    <p class="classic-header__bio">My research focuses on privacy-preserving computation and systems security, with an emphasis on efficient MPC, oblivious primitives, and accountable anonymous communication.</p>
-    <p class="classic-header__name-note"><em>Name note.</em> “Wentao Dong” sounds roughly like “when top-down.” My research philosophy asks a related question: when should security be designed top-down from guarantees, and when should systems be built bottom-up from constraints?</p>
+    <p class="classic-header__bio">My research focuses on privacy-preserving computation and systems security, including efficient multi-party computation (MPC), trusted execution environments (TEEs), differential privacy (DP), zero-knowledge proofs (ZKPs), and oblivious RAM (ORAM).</p>
+    <p class="classic-header__name-note"><em>Name note.</em> My name sounds a little like “when top-down.” My research philosophy asks a related question: when should security be designed top-down from guarantees, and when should systems be built bottom-up from constraints?</p>
     <p class="classic-header__links">
       <a href="mailto:dongdongdoge@gmail.com">Email</a>
       <span>·</span>
@@ -144,15 +145,4 @@ redirect_from:
   </ul>
 </section>
 
-<footer class="classic-footer">
-  <section class="visitor-map" aria-labelledby="visitor-map-title">
-    <div class="visitor-map__copy">
-      <h2 id="visitor-map-title">Visitors</h2>
-      <p>Approximate geographic distribution of visits.</p>
-    </div>
-    <div class="visitor-map__widget" aria-label="Visitor map by ClustrMaps">
-      <img src="https://clustrmaps.com/map_v2.png?d=8I5MYrj1fQE6W59JwQJQ-VgfmI-XPWoh6ISDAkHuJY0&amp;cl=fbfbf8&amp;w=150&amp;t=n" width="150" alt="Map showing the approximate locations of site visitors">
-    </div>
-  </section>
-  <p class="classic-footer__updated">Last updated July 2026.</p>
-</footer>
+<footer class="classic-footer">Last updated July 2026.</footer>
