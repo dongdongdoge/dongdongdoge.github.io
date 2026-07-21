@@ -39,6 +39,7 @@ redirect_from:
       <span>·</span>
       <a href="/others/wentao-cv-26.pdf" rel="noopener">CV</a>
     </p>
+    <p class="classic-header__collaboration">I welcome conversations and collaborations on privacy-preserving systems, applied cryptography, and trustworthy deployment.</p>
   </div>
 </header>
 
@@ -143,4 +144,15 @@ redirect_from:
   </ul>
 </section>
 
-<footer class="classic-footer">Last updated July 2026.</footer>
+<footer class="classic-footer">
+  <section class="visitor-map" aria-labelledby="visitor-map-title">
+    <div class="visitor-map__copy">
+      <h2 id="visitor-map-title">Visitors</h2>
+      <p>Approximate geographic distribution of visits.</p>
+    </div>
+    <div class="visitor-map__widget" aria-label="Visitor map by ClustrMaps">
+      <img src="https://clustrmaps.com/map_v2.png?d=8I5MYrj1fQE6W59JwQJQ-VgfmI-XPWoh6ISDAkHuJY0&amp;cl=fbfbf8&amp;w=150&amp;t=n" width="150" alt="Map showing the approximate locations of site visitors">
+    </div>
+  </section>
+  <p class="classic-footer__updated">Last updated July 2026.</p>
+</footer>
