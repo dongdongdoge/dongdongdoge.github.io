@@ -2,7 +2,7 @@
 permalink: /
 title: "Wentao's Page"
 excerpt: ""
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -15,7 +15,7 @@ redirect_from:
   <span class="academic-nav__links">
     <a href="#publications" target="_self">Publications</a>
     <a href="/research/" target="_self">Research</a>
-    <a href="/teaching/" target="_self">Teaching</a>
+    <a href="/teaching/" target="_self">Activities</a>
     <a href="#impact" target="_self">Impact</a>
     <a href="/others/wentao-cv-26.pdf">CV</a>
   </span>
@@ -25,10 +25,10 @@ redirect_from:
   <div class="classic-header__body">
     <p class="classic-header__eyebrow">Privacy-preserving systems · Applied cryptography</p>
     <h1>Wentao Dong <span>董文韬</span></h1>
-    <p class="classic-header__position">Researcher, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<br>Ph.D. in Computer Science, City University of Hong Kong</p>
+    <p class="classic-header__position">Researcher, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<span class="classic-header__position-separator" aria-hidden="true">·</span>Ph.D. in Computer Science, City University of Hong Kong</p>
     <p class="classic-header__mentors"><span class="classic-header__mentor">Current mentor: <a href="https://www.cs.cityu.edu.hk/~jia/">Prof. Xiaohua Jia</a> (ACM/IEEE Fellow)</span><span class="classic-header__mentor-separator">·</span><span class="classic-header__mentor">Ph.D. advisor: <a href="https://www.cs.cityu.edu.hk/~congwang/">Prof. Cong Wang</a> (IEEE Fellow)</span></p>
     <p class="classic-header__bio">My research focuses on privacy-preserving computation and systems security, including efficient multi-party computation (MPC), trusted execution environments (TEEs), differential privacy (DP), zero-knowledge proofs (ZKPs), and oblivious RAM (ORAM).</p>
-    <p class="classic-header__name-note"><em>Name note.</em> My name sounds a little like “when top-down.” My research philosophy asks a related question: when should security be designed top-down from guarantees, and when should systems be built bottom-up from constraints?</p>
+    <p class="classic-header__name-note"><span class="classic-header__name-note-label">Name note</span> My name sounds a little like “when top-down.” My research philosophy asks a related question: when should security be designed top-down from guarantees, and when should systems be built bottom-up from constraints?</p>
     <p class="classic-header__links">
       <a href="mailto:dongdongdoge@gmail.com">Email</a>
       <span>·</span>
@@ -40,7 +40,6 @@ redirect_from:
       <span>·</span>
       <a href="/others/wentao-cv-26.pdf" rel="noopener">CV</a>
     </p>
-    <p class="classic-header__collaboration">I welcome conversations and collaborations on privacy-preserving systems, applied cryptography, and trustworthy deployment.</p>
   </div>
 </header>
 
@@ -59,7 +58,7 @@ redirect_from:
         <p><strong>Wentao Dong</strong>, Yang Cao, Cong Wang, and Wei-Bin Lee.</p>
       </li>
       <li>
-        <div class="classic-publications__venue">TNET</div>
+        <div class="classic-publications__venue">TON</div>
         <h3><a href="https://arxiv.org/abs/2504.19566">Anonymous Messaging Made More Flexible with PingPong</a></h3>
         <p>Peipei Jiang, Yihao Wu, Lei Xu, <strong>Wentao Dong</strong>, Peiyuan Chen, Yulong Ming, Cong Wang, Xiaohua Jia, and Qian Wang.</p>
       </li>
@@ -117,7 +116,7 @@ redirect_from:
     <h3 class="publication-year-group__year">2023</h3>
     <ol class="classic-publications">
       <li>
-        <div class="classic-publications__venue">CCS Poster</div>
+        <div class="classic-publications__venue">CCS (Poster)</div>
         <h3><a href="https://doi.org/10.1145/3576915.3624398">Towards Lightweight TEE-Assisted MPC</a></h3>
         <p><strong>Wentao Dong</strong> and Cong Wang.</p>
       </li>
@@ -126,20 +125,23 @@ redirect_from:
 </section>
 
 <section class="classic-section" id="impact" aria-labelledby="impact-title">
-  <h2 id="impact-title">Research to Impact</h2>
+  <div class="classic-section__heading">
+    <h2 id="impact-title">Research to Impact</h2>
+    <a href="/research/">Research context →</a>
+  </div>
   <ul class="classic-impact">
     <li>
       <h3><a href="/x-crypt/">X-Crypt</a></h3>
       <div>
         <p>Privacy-preserving computation infrastructure.</p>
-        <p class="classic-impact__meta">Funded through HK Tech 300 and HKSTP Ideation.</p>
+        <p class="classic-impact__meta"><span>Funded by</span>HK Tech 300 · HKSTP Ideation</p>
       </div>
     </li>
     <li>
       <h3><a href="https://synapiron.github.io/" rel="noopener">Synapiron</a></h3>
       <div>
         <p>Privacy-enhanced transmission and secure networking.</p>
-        <p class="classic-impact__meta">In collaboration with HKUST (GZ), ETH Zurich, and Tsinghua University.</p>
+        <p class="classic-impact__meta"><span>In collaboration with</span>HKUST (GZ) · ETH Zurich · Tsinghua University</p>
       </div>
     </li>
   </ul>

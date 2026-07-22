@@ -1,13 +1,15 @@
-# main links links
 main:
   - title: "Publications"
     url: "/#publications"
 
-  - title: "Research to Impact"
-    url: "/#impact"
+  - title: "Research"
+    url: "/research/"
 
-  - title: "Writing"
-    url: "/blog/"
+  - title: "Activities"
+    url: "/teaching/"
+
+  - title: "Impact"
+    url: "/#impact"
 
   - title: "CV"
     url: "/others/wentao-cv-26.pdf"

@@ -13,11 +13,11 @@ body {
   padding-bottom: 0em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.68;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background: #fbfcff;
+  background: #fff;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 600;
+  color: mix(#000, $text-color, 88%);
 }
 
 h1 {
@@ -63,7 +64,7 @@ small, .small {
 }
 
 p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.72em;
 }
 
 u,
@@ -123,7 +124,7 @@ blockquote {
 
 a {
   color: $link-color;
-  text-decoration-color: rgba(34, 75, 141, 0.35);
+  text-decoration-color: rgba(40, 75, 122, 0.26);
   text-decoration-thickness: from-font;
   text-underline-offset: 0.16em;
   -webkit-text-decoration-skip: ink;
@@ -140,7 +141,7 @@ a {
 
   &:hover {
     color: $link-color-hover;
-    text-decoration-color: rgba(34, 75, 141, 0.55);
+    text-decoration-color: rgba(40, 75, 122, 0.42);
   }
 }
 
@@ -332,6 +333,6 @@ nav {
    ========================================================================== */
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-  -webkit-transition: $global-transition;
-  transition: $global-transition;
+  -webkit-transition: color 0.16s ease, background-color 0.16s ease, border-color 0.16s ease;
+  transition: color 0.16s ease, background-color 0.16s ease, border-color 0.16s ease;
 }

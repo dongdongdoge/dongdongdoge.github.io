@@ -1,18 +1,18 @@
 /* ==========================================================================
-   Teaching page
+   Teaching, talks, and service page
    ========================================================================== */
 
 body.is-teaching {
-  --teaching-paper: #fbfbf8;
-  --teaching-ink: #202725;
-  --teaching-muted: #66706c;
-  --teaching-faint: #8a918e;
-  --teaching-link: #2f6253;
-  --teaching-rule: #dfe3dd;
-  --teaching-rule-light: #eceeea;
+  --activity-paper: #fbfbf8;
+  --activity-ink: #202725;
+  --activity-muted: #66706c;
+  --activity-faint: #8a918e;
+  --activity-link: #2f6253;
+  --activity-rule: #dfe3dd;
+  --activity-rule-light: #eceeea;
 
-  background: var(--teaching-paper);
-  color: var(--teaching-ink);
+  background: var(--activity-paper);
+  color: var(--activity-ink);
 
   .masthead {
     display: none;
@@ -39,22 +39,21 @@ body.is-teaching {
   }
 
   .page__content {
-    color: var(--teaching-ink);
+    color: var(--activity-ink);
     font-size: 0.96rem;
-    line-height: 1.66;
+    line-height: 1.65;
 
     h1,
     h2,
     h3,
-    p,
-    ol {
+    p {
       margin-top: 0;
     }
 
     h1,
     h2,
     h3 {
-      color: var(--teaching-ink);
+      color: var(--activity-ink);
     }
 
     h1,
@@ -68,7 +67,7 @@ body.is-teaching {
       margin: 0;
       padding: 0;
       border: 0;
-      font-size: 1.35rem;
+      font-size: 1.28rem;
       line-height: 1.3;
 
       &:after {
@@ -83,7 +82,7 @@ body.is-teaching {
     }
 
     a {
-      color: var(--teaching-link);
+      color: var(--activity-link);
       text-decoration: none;
       text-decoration-thickness: 0.055em;
       text-underline-offset: 0.16em;
@@ -110,7 +109,7 @@ body.is-teaching {
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem 0 0.85rem;
-    border-bottom: 1px solid var(--teaching-rule);
+    border-bottom: 1px solid var(--activity-rule);
     font-size: 0.7rem;
     letter-spacing: 0.015em;
   }
@@ -129,23 +128,22 @@ body.is-teaching {
   }
 
   .teaching-nav__links a {
-    color: var(--teaching-muted);
+    color: var(--activity-muted);
   }
 
   .teaching-nav__links a[aria-current="page"] {
-    color: var(--teaching-ink);
+    color: var(--activity-ink);
     font-weight: 650;
   }
 
   .teaching-hero {
-    max-width: 46rem;
-    padding: 3rem 0 2.7rem;
+    padding: 2.75rem 0 2.35rem;
   }
 
   .teaching-eyebrow {
-    margin-bottom: 0.55rem;
-    color: var(--teaching-link);
-    font-size: 0.62rem;
+    margin-bottom: 0.52rem;
+    color: var(--activity-link);
+    font-size: 0.61rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.4;
@@ -153,133 +151,80 @@ body.is-teaching {
   }
 
   .teaching-hero h1 {
-    margin: 0 0 0.72rem;
-    font-size: 2.45rem;
+    margin: 0 0 0.5rem;
+    font-size: 2.25rem;
     line-height: 1.1;
   }
 
-  .teaching-hero__dek {
-    max-width: 43rem;
+  .teaching-hero > p:last-child {
     margin: 0;
-    color: #4f5955;
+    color: var(--activity-muted);
     font-family: $serif;
-    font-size: 0.9rem;
-    line-height: 1.68;
+    font-size: 0.82rem;
+    line-height: 1.6;
   }
 
-  .teaching-section {
-    padding: 2.45rem 0 2.6rem;
-    border-top: 1px solid var(--teaching-rule);
-  }
-
-  .teaching-section__heading {
+  .activity-section {
     display: grid;
-    grid-template-columns: 4.2rem minmax(0, 1fr);
-    gap: 1.2rem;
-    align-items: start;
-    margin-bottom: 1.35rem;
+    grid-template-columns: 8.2rem minmax(0, 1fr);
+    gap: 1.35rem;
+    padding: 2rem 0 2.2rem;
+    border-top: 1px solid var(--activity-rule);
   }
 
-  .teaching-section__heading > span {
-    padding-top: 0.2rem;
-    color: var(--teaching-link);
-    font-family: $monospace;
-    font-size: 0.58rem;
-    font-weight: 700;
-    letter-spacing: 0.09em;
+  .activity-section > h2 {
+    padding-top: 0.03rem;
   }
 
-  .teaching-section__heading p {
-    margin: 0.3rem 0 0;
-    color: var(--teaching-muted);
-    font-size: 0.7rem;
-    line-height: 1.55;
+  .activity-list {
+    border-top: 1px solid var(--activity-rule-light);
   }
 
-  .teaching-courses {
-    border-top: 1px solid var(--teaching-rule-light);
-  }
-
-  .teaching-courses article {
+  .activity-list article {
     display: grid;
-    grid-template-columns: 8.4rem minmax(0, 1fr);
-    gap: 1.3rem;
-    padding: 1.08rem 0 1.12rem;
-    border-bottom: 1px solid var(--teaching-rule-light);
+    grid-template-columns: 6.4rem minmax(0, 1fr);
+    gap: 1.1rem;
+    padding: 0.9rem 0 0.94rem;
+    border-bottom: 1px solid var(--activity-rule-light);
   }
 
-  .teaching-courses__meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.12rem;
-    color: var(--teaching-faint);
+  .activity-date {
+    margin: 0;
+    color: var(--activity-faint);
     font-family: $monospace;
     font-size: 0.58rem;
     line-height: 1.5;
   }
 
-  .teaching-courses h3 {
-    margin: 0 0 0.23rem;
-    font-size: 0.84rem;
+  .activity-list h3 {
+    margin: 0 0 0.18rem;
+    font-size: 0.79rem;
     line-height: 1.45;
   }
 
-  .teaching-courses h3 span {
-    margin-right: 0.42rem;
-    color: var(--teaching-link);
+  .activity-list h3 span {
+    margin-right: 0.4rem;
+    color: var(--activity-link);
     font-family: $monospace;
     font-size: 0.73em;
     font-weight: 700;
     letter-spacing: 0.03em;
   }
 
-  .teaching-courses article p {
+  .activity-list article div > p {
     margin: 0;
-    color: var(--teaching-muted);
-    font-size: 0.68rem;
-    line-height: 1.5;
+    color: var(--activity-muted);
+    font-size: 0.66rem;
+    line-height: 1.55;
   }
 
-  .teaching-principles {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.8rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .teaching-principles li {
-    padding-top: 0.9rem;
-    border-top: 1px solid var(--teaching-rule-light);
-  }
-
-  .teaching-principles li > span {
-    display: block;
-    margin-bottom: 0.72rem;
-    color: var(--teaching-link);
-    font-family: $monospace;
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-  }
-
-  .teaching-principles h3 {
-    margin: 0 0 0.35rem;
-    font-size: 0.78rem;
-    line-height: 1.45;
-  }
-
-  .teaching-principles p {
-    margin: 0;
-    color: var(--teaching-muted);
-    font-size: 0.67rem;
-    line-height: 1.58;
+  .activity-list--service .activity-date {
+    color: #78817d;
   }
 
   .teaching-footer {
     padding: 1.4rem 0 2.8rem;
-    border-top: 1px solid var(--teaching-rule);
+    border-top: 1px solid var(--activity-rule);
     color: #9aa09d;
     font-size: 0.63rem;
   }
@@ -300,30 +245,22 @@ body.is-teaching {
     }
 
     .teaching-hero {
-      padding: 2.3rem 0 2.2rem;
+      padding: 2.25rem 0 2rem;
     }
 
     .teaching-hero h1 {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
 
-    .teaching-section {
-      padding: 2.1rem 0 2.25rem;
-    }
-
-    .teaching-section__heading {
-      grid-template-columns: 3rem minmax(0, 1fr);
-      gap: 0.8rem;
-    }
-
-    .teaching-courses article {
-      grid-template-columns: 6.5rem minmax(0, 1fr);
-      gap: 0.9rem;
-    }
-
-    .teaching-principles {
+    .activity-section {
       grid-template-columns: 1fr;
-      gap: 1.15rem;
+      gap: 0.8rem;
+      padding: 1.8rem 0 2rem;
+    }
+
+    .activity-list article {
+      grid-template-columns: 5.7rem minmax(0, 1fr);
+      gap: 0.8rem;
     }
   }
 }
@@ -338,19 +275,9 @@ body.is-teaching {
       justify-content: flex-start;
     }
 
-    .teaching-section__heading,
-    .teaching-courses article {
+    .activity-list article {
       grid-template-columns: 1fr;
-      gap: 0.45rem;
-    }
-
-    .teaching-section__heading > span {
-      padding: 0;
-    }
-
-    .teaching-courses__meta {
-      flex-direction: row;
-      gap: 0.55rem;
+      gap: 0.3rem;
     }
   }
 }
