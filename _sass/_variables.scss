@@ -50,6 +50,16 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
+/* Wuhan University: official Luojia Blue and Luojia Green */
+$luojia-blue                : #002554;
+$luojia-green               : #115740;
+$luojia-paper               : #fbfbf8;
+$luojia-ink                 : #1b2938;
+$luojia-muted               : #65717d;
+$luojia-faint               : #8a949d;
+$luojia-rule                : #d9e0e5;
+$luojia-rule-light          : #e9edf0;
+
 $gray                       : #7a8288;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
@@ -60,14 +70,14 @@ $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
-$text-color                 : #18212b;
+$text-color                 : $luojia-ink;
 $border-color               : $lighter-gray;
 
-$primary-color              : #0f2f6a;
+$primary-color              : $luojia-blue;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #005bac;
+$info-color                 : $luojia-blue;
 // $info-color                 : #52adc8;
 
 /* brands */

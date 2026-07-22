@@ -15,7 +15,7 @@ var breaks = [];
 function updateNav() {
   // The homepage intentionally hides the theme masthead. Avoid measuring and
   // recursively reflowing a navigation element with no visible width.
-  if (!$nav.length || !$nav.is(':visible')) {
+  if (!$nav.length || !$nav[0].getClientRects().length || $nav[0].getBoundingClientRect().width <= 0) {
     return;
   }
 

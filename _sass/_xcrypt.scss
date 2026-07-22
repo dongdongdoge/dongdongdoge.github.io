@@ -8,7 +8,7 @@
   padding: 3rem 1.25rem;
   background: radial-gradient(1000px 400px at 20% 0%, rgba(255,255,255,0.08), rgba(255,255,255,0) 60%),
               radial-gradient(800px 300px at 80% 10%, rgba(255,255,255,0.08), rgba(255,255,255,0) 60%),
-              linear-gradient(135deg, #0f6bff 0%, #042b62 100%);
+              linear-gradient(135deg, $luojia-green 0%, $luojia-blue 100%);
   color: #fff;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -36,7 +36,7 @@ body.xcrypt-mode #main {
   margin: 0 0 0.75rem 0;
   font-size: 2.4rem;
   line-height: 1.2;
-  background: linear-gradient(90deg, #fff, #b6d1ff, #fff);
+  background: linear-gradient(90deg, #fff, #c7d9e8, #fff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -66,7 +66,7 @@ body.xcrypt-mode #main {
 }
 
 .xcrypt-hero .mock img { display: block; width: 100%; height: auto; }
-.xcrypt-hero .hero-note { margin: 0 0 .6rem 0; padding: .5rem .7rem; font-size: .95rem; color: #0b1f44; background: rgba(255,255,255,0.9); border: 1px solid rgba(11,31,68,0.08); border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
+.xcrypt-hero .hero-note { margin: 0 0 .6rem 0; padding: .5rem .7rem; font-size: .95rem; color: $luojia-blue; background: rgba(255,255,255,0.9); border: 1px solid rgba(0,37,84,0.1); border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,.08); }
 .xcrypt-subnav {
   position: sticky;
   top: 64px;
@@ -84,13 +84,13 @@ body.xcrypt-mode #main {
 
 .xcrypt-subnav a {
   text-decoration: none;
-  color: #0f2b5e;
+  color: $luojia-blue;
   font-weight: 600;
   padding: 0.4rem 0.7rem;
   border-radius: 8px;
 }
 
-.xcrypt-subnav a:hover { background: rgba(15,107,255,0.08); }
+.xcrypt-subnav a:hover { background: rgba(0,37,84,0.08); }
 
 .glass {
   background: rgba(255,255,255,0.65);
@@ -132,7 +132,7 @@ body.xcrypt-mode #main {
 
 .partner-name { 
   font-size: .85rem; 
-  color: #234077; 
+  color: $luojia-green;
   opacity: .8; 
   text-align: center;
 }
@@ -143,14 +143,14 @@ body.xcrypt-mode #main {
   position: absolute;
   inset: -2px;
   border-radius: 12px;
-  background: radial-gradient(60% 60% at 50% 50%, rgba(15,107,255,.35), rgba(15,107,255,0));
+  background: radial-gradient(60% 60% at 50% 50%, rgba(17,87,64,.3), rgba(17,87,64,0));
   filter: blur(12px);
   z-index: -1;
 }
 
 /* Scroll progress */
 .xcrypt-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 100; background: transparent; }
-.xcrypt-progress .bar { height: 100%; width: 0%; background: linear-gradient(90deg, #0f6bff, #7aa7ff); box-shadow: 0 0 8px rgba(15,107,255,.6); }
+.xcrypt-progress .bar { height: 100%; width: 0%; background: linear-gradient(90deg, $luojia-green, $luojia-blue); box-shadow: 0 0 8px rgba(0,37,84,.45); }
 
 
 .xcrypt-hero p {
@@ -165,12 +165,12 @@ body.xcrypt-mode #main {
   gap: 0.6rem;
   padding: 0.7rem 1rem;
   background: #ffffff;
-  color: #0f6bff;
+  color: $luojia-blue;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 8px 24px rgba(15,107,255,0.25);
+  box-shadow: 0 8px 24px rgba(0,37,84,0.22);
 }
 
 .xcrypt-cta:hover {
@@ -208,7 +208,7 @@ body.xcrypt-mode #main {
   position: absolute;
   right: 10px;
   top: 8px;
-  color: #0f2b5e;
+  color: $luojia-blue;
   opacity: 0.08;
   pointer-events: none;
 }
@@ -241,7 +241,7 @@ body.xcrypt-mode #main {
 }
 
 .xcrypt-metric {
-  background: #0f6bff;
+  background: $luojia-blue;
   color: #fff;
   border-radius: 12px;
   padding: 1rem;
@@ -370,9 +370,9 @@ body.xcrypt-mode #main {
 }
 
 /* Simple inline SVG icons (data URIs) */
-$icon-shield: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f2b5e'%3E%3Cpath d='M12 2l7 3v6c0 5-3.1 9.3-7 11-3.9-1.7-7-6-7-11V5l7-3z'/%3E%3C/svg%3E";
-$icon-graph:  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f2b5e'%3E%3Cpath d='M3 3h2v18H3zM9 9h2v12H9zM15 5h2v16h-2zM21 12h2v9h-2z'/%3E%3C/svg%3E";
-$icon-link:   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230f2b5e'%3E%3Cpath d='M3.9 12a5 5 0 015-5h3v2h-3a3 3 0 100 6h3v2h-3a5 5 0 01-5-5zm6.2 1h3.8v-2H10v2zm5.1-6a5 5 0 015 5 5 5 0 01-5 5h-3v-2h3a3 3 0 100-6h-3V7h3z'/%3E%3C/svg%3E";
+$icon-shield: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23002554'%3E%3Cpath d='M12 2l7 3v6c0 5-3.1 9.3-7 11-3.9-1.7-7-6-7-11V5l7-3z'/%3E%3C/svg%3E";
+$icon-graph:  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23002554'%3E%3Cpath d='M3 3h2v18H3zM9 9h2v12H9zM15 5h2v16h-2zM21 12h2v9h-2z'/%3E%3C/svg%3E";
+$icon-link:   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23002554'%3E%3Cpath d='M3.9 12a5 5 0 015-5h3v2h-3a3 3 0 100 6h3v2h-3a5 5 0 01-5-5zm6.2 1h3.8v-2H10v2zm5.1-6a5 5 0 015 5 5 5 0 01-5 5h-3v-2h3a3 3 0 100-6h-3V7h3z'/%3E%3C/svg%3E";
 
 /* Feature icons */
 .xcrypt-feature.icon-analytics::after { @include bg-icon($icon-graph); }
@@ -399,7 +399,7 @@ $icon-link:   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' view
   margin: 3rem 0 2rem 0;
   padding: 2rem 1.25rem;
   border-radius: 16px;
-  background: linear-gradient(135deg, #042b62, #0f6bff);
+  background: linear-gradient(135deg, $luojia-blue, $luojia-green);
   color: #fff;
   text-align: center;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
@@ -423,15 +423,15 @@ $icon-link:   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' view
 
 /* Compliance badges */
 .badges-row { display: flex; flex-wrap: wrap; gap: .6rem; }
-.badge-chip { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .6rem; border: 1px solid #dfe6f3; border-radius: 999px; background: #fff; font-weight: 600; color: #234077; }
-.badge-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 2px rgba(34,197,94,.15); }
+.badge-chip { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .6rem; border: 1px solid #dfe6f3; border-radius: 999px; background: #fff; font-weight: 600; color: $luojia-green; }
+.badge-dot { width: 8px; height: 8px; border-radius: 50%; background: $luojia-green; box-shadow: 0 0 0 2px rgba(17,87,64,.15); }
 
 /* Comparison table */
 .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 1rem 0; }
 .comparison-table th, .comparison-table td { padding: .75rem .8rem; border-bottom: 1px solid #edf1f7; text-align: left; }
-.comparison-table th { background: #f7faff; color: #123361; font-weight: 700; }
+.comparison-table th { background: #f4f7f9; color: $luojia-blue; font-weight: 700; }
 .comparison-table tr:hover td { background: #fcfdff; }
-.yes { color: #16a34a; font-weight: 700; }
+.yes { color: $luojia-green; font-weight: 700; }
 .no { color: #d92d20; font-weight: 700; }
 
 /* Hiring */
@@ -468,5 +468,4 @@ $icon-link:   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' view
     font-size: 1.7rem;
   }
 }
-
 

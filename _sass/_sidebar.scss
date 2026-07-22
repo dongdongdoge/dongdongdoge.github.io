@@ -91,7 +91,7 @@ body.xcrypt-mode .sidebar h4 {
   font-size: .9rem;
   font-weight: 700;
   letter-spacing: .02em;
-  color: #0f2b5e;
+  color: $luojia-blue;
 }
 
 /* Link list */
@@ -103,14 +103,14 @@ body.xcrypt-mode .sidebar li a {
   display: block;
   padding: .35rem .4rem;
   border-radius: 6px;
-  color: #193a73;
+  color: $luojia-blue;
   text-decoration: none;
   transition: background-color .15s ease, color .15s ease;
 }
 
 body.xcrypt-mode .sidebar li a:hover {
-  background-color: rgba(15, 107, 255, 0.08);
-  color: #0f6bff;
+  background-color: rgba(0, 37, 84, 0.08);
+  color: $luojia-green;
 }
 
 /* Subtle dividers between logical groups */
@@ -421,8 +421,8 @@ body.xcrypt-mode .sidebar .author__urls > li + li {
       box-shadow: 0 1px 0 rgba(16, 24, 40, 0.03);
 
       &:hover {
-        border-color: rgba(15, 107, 255, 0.30);
-        background: rgba(15, 107, 255, 0.06);
+        border-color: rgba(0, 37, 84, 0.30);
+        background: rgba(0, 37, 84, 0.06);
         text-decoration: none;
       }
     }
@@ -450,7 +450,7 @@ body.xcrypt-mode .sidebar .author__urls > li + li {
   font-weight: 750;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #0f2b5e;
+  color: $luojia-blue;
 }
 
 .sidebar-note {
