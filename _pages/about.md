@@ -17,6 +17,7 @@ redirect_from:
     <a href="/research/" target="_self">Research</a>
     <a href="/teaching/" target="_self">Activities</a>
     <a href="#impact" target="_self">Impact</a>
+    <a href="/blog/" target="_self">Blog</a>
     <a href="/others/wentao-cv-26.pdf">CV</a>
   </span>
 </nav>
@@ -25,7 +26,7 @@ redirect_from:
   <div class="classic-header__body">
     <p class="classic-header__eyebrow">Privacy-preserving systems · Applied cryptography</p>
     <h1>Wentao Dong <span>董文韬</span></h1>
-    <p class="classic-header__position">Researcher, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<span class="classic-header__position-separator" aria-hidden="true">·</span>Ph.D. in Computer Science, City University of Hong Kong</p>
+    <p class="classic-header__position">Researcher, <a href="https://hkaift.com/">AIFT</a> (InnoHK)<span class="classic-header__position-separator" aria-hidden="true">·</span>Ph.D. in CS, CityUHK</p>
     <p class="classic-header__mentors"><span class="classic-header__mentor">Current mentor: <a href="https://www.cs.cityu.edu.hk/~jia/">Prof. Xiaohua Jia</a> (ACM/IEEE Fellow)</span><span class="classic-header__mentor-separator">·</span><span class="classic-header__mentor">Ph.D. advisor: <a href="https://www.cs.cityu.edu.hk/~congwang/">Prof. Cong Wang</a> (IEEE Fellow)</span></p>
     <p class="classic-header__bio">My research focuses on privacy-preserving computation and systems security, including efficient multi-party computation (MPC), trusted execution environments (TEEs), differential privacy (DP), zero-knowledge proofs (ZKPs), and oblivious RAM (ORAM).</p>
     <p class="classic-header__name-note"><span class="classic-header__name-note-label">Name note</span> My name sounds a little like “when top-down.” My research philosophy asks a related question: when should security be designed top-down from guarantees, and when should systems be built bottom-up from constraints?</p>

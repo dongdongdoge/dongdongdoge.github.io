@@ -2,7 +2,8 @@
    Teaching, talks, and service page
    ========================================================================== */
 
-body.is-teaching {
+body.is-teaching,
+body.is-blog {
   --activity-paper: #{$luojia-paper};
   --activity-ink: #{$luojia-ink};
   --activity-muted: #{$luojia-muted};
@@ -233,10 +234,24 @@ body.is-teaching {
   .teaching-footer span {
     margin: 0 0.3rem;
   }
+
+  .blog-placeholder {
+    min-height: 18rem;
+    padding: 2.1rem 0 4.5rem;
+    border-top: 1px solid var(--activity-rule);
+  }
+
+  .blog-placeholder p {
+    margin: 0;
+    color: var(--activity-secondary);
+    font-family: $serif;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 620px) {
-  body.is-teaching {
+  body.is-teaching,
+  body.is-blog {
     #main {
       padding: 0 1.2rem;
     }
@@ -267,7 +282,8 @@ body.is-teaching {
 }
 
 @media (max-width: 420px) {
-  body.is-teaching {
+  body.is-teaching,
+  body.is-blog {
     .teaching-nav__identity {
       display: none;
     }

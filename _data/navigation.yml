@@ -11,5 +11,8 @@ main:
   - title: "Impact"
     url: "/#impact"
 
+  - title: "Blog"
+    url: "/blog/"
+
   - title: "CV"
     url: "/others/wentao-cv-26.pdf"

@@ -13,6 +13,7 @@ body_class: is-teaching
     <a href="/#publications" target="_self">Publications</a>
     <a href="/research/" target="_self">Research</a>
     <a href="/teaching/" target="_self" aria-current="page">Activities</a>
+    <a href="/blog/" target="_self">Blog</a>
     <a href="/others/wentao-cv-26.pdf">CV</a>
   </span>
 </nav>
